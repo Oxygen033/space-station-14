@@ -50,6 +50,13 @@
   weight: 100
 
 - type: department
+  id: Centcom
+  description: department-Centcom-description
+  color: "#008000"
+  roles:
+  - CentralCommandAssistant
+
+- type: department
   id: Engineering
   description: department-Engineering-description
   color: "#EFB341"

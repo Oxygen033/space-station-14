@@ -607,3 +607,16 @@
     layers:
       - state: green
       - state: zookeeper
+
+#CENTCOM
+- type: entity
+  id: SpawnPointCentcomAssist
+  parent: SpawnPointJobBase
+  name: centcomassistant
+  components:
+  - type: SpawnPoint
+    job_id: CentralCommandAssistant
+  - type: Sprite
+    layers:
+      - state: green
+      - state: centcomassistant
