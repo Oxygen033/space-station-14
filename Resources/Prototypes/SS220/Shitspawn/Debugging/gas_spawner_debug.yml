@@ -1,0 +1,23 @@
+- type: entity
+  name: debug gas spawner
+  suffix: Admin, DO NOT MAP
+  parent: BaseItem
+  id: DebugGasSpawner
+  description: Spawns specified amount of gas
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Atmos/gasanalyzer.rsi
+    layers:
+      - state: icon
+        map: ["analyzer"]
+  - type: DebugGasSpawner
+  - type: ActivatableUI
+    inHandsOnly: true
+    singleUser: true
+    requireActiveHand: false
+    key: enum.DebugGasSpawnerUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.DebugGasSpawnerUiKey.Key:
+        type: GasAnalyzerBoundUserInterface
+  - type: Appearance
