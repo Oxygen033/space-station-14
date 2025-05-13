@@ -6,9 +6,9 @@ namespace Content.Client.SS220.DebugGasSpawner.UI
     public sealed class DebugGasSpawnerBoundUserInterface : BoundUserInterface
     {
         [ViewVariables]
-        private GasAnalyzerWindow? _window;
+        private DebugGasSpawnerWindow? _window;
 
-        public GasAnalyzerBoundUserInterface(EntityUid owner, Enum uiKey) : base(owner, uiKey)
+        public DebugGasSpawnerBoundUserInterface(EntityUid owner, Enum uiKey) : base(owner, uiKey)
         {
         }
 

@@ -1,0 +1,30 @@
+<controls:FancyWindow xmlns="https://spacestation14.io"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+                      SetSize="110 220"
+                      MinSize="110 220"
+                      Title="{Loc debug-gas-spawner-title}">
+    <BoxContainer Orientation="Vertical"
+                  Margin="5 5 5 5"
+                  SeparationOverride="5">
+        <OptionButton Name="GasSelectionOptionButton"/>
+        <BoxContainer Orientation="Horizontal"
+                      HorizontalExpand="True">
+            <Label Text="{Loc debug-gas-spawner-amount-title}"
+                   Margin="0 0 5 0"/>
+            <FloatSpinBox HorizontalExpand="True"
+                          Name="DebugGasSpawnerAmountInput"
+                          MinSize="70 0"/>
+            <Button Name="SetAmountButton"/>
+        </BoxContainer>
+        <BoxContainer Orientation="Horizontal"
+                      HorizontalExpand="True">
+            <Label Text="{Loc debug-gas-spawner-temperature-title}"
+                   Margin="0 0 5 0"/>
+            <FloatSpinBox HorizontalExpand="True"
+                          Name="DebugGasSpawnerTemperatureInput"
+                          MinSize="1 0"/>
+            <Button Name="SetTemperatureButton"/>
+        </BoxContainer>
+    </BoxContainer>
+</controls:FancyWindow>
